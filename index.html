@@ -113,6 +113,7 @@
             height = Number(height);
             if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
                document.getElementById('triangle_area').value = 'Invalid value';
+               return;
             }
             let area = (base * height) / 2;
             document.getElementById('triangle_area').value = area.toFixed(2);
@@ -123,6 +124,7 @@
             side = Number(side);
             if (isNaN(side) || side <= 0) {
                document.getElementById('square_area').value = 'Invalid value';
+               return;
             }
 
             let area = side * side;
@@ -136,6 +138,7 @@
             width = Number(width);
             if (isNaN(length) || isNaN(width) || length <= 0 || width <= 0) {
                document.getElementById('rectangle_area').value = 'Invalid value';
+               return;
             }
             let area = length * width;
             document.getElementById('rectangle_area').value = area.toFixed(2);
